@@ -4,7 +4,7 @@ export default defineConfig4CustomTheme({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 're-special',
+      title: 're-spec',
       description: '前端编码规范工程化',
     },
   },
@@ -110,7 +110,7 @@ export default defineConfig4CustomTheme({
     footer: {
       createYear: 2024,
       copyrightInfo:
-        'encode studio | <a href="https://github.com/Graham-Sun/re-spec" target="_blank">github</a>',
+        're studio | <a href="https://github.com/Graham-Sun/re-spec" target="_blank">github</a>',
     },
 
     extendFrontmatter: {

@@ -159,7 +159,7 @@ author:
     ```html
     <head>
      <meta charset="utf-8" />
-     <title>title</title>
+     <title>re-spec</title>
     </head>
     ```
 
@@ -173,7 +173,7 @@ author:
     <!DOCTYPE html>
     <html>
      <head>
-      <title>title</title>
+      <title>re-spec</title>
      </head>
      <body>
       <img src="images/company-logo.png" alt="Company" />
@@ -337,10 +337,10 @@ author:
 <html lang="zh-CN">
  <head>
   <meta charset="utf-8" />
-  <meta name="description" content="- 一千个职业梦想的赞助商" />
-  <meta name="keyword" content="title" />
+  <meta name="description" content="re-spec - 一千个职业梦想的赞助商" />
+  <meta name="keyword" content="re-spec" />
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, viewport-fit=cover" />
-  <title>title</title>
+  <title>re-spec</title>
   <link rel="stylesheet" href="example.css" />
  </head>
  <body>
