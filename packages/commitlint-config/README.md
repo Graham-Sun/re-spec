@@ -18,7 +18,7 @@ npm install commitlint-config-re @commitlint/cli --save-dev
 
 ```javascript
 module.exports = {
-  extends: ['commitlint-config-re'],
+  extends: ['re'],
 };
 ```
 
@@ -32,11 +32,23 @@ module.exports = {
 npm install husky --save-dev
 ```
 
-然后执行添加`commit-msg`:
+然后执行添加`commit-msg`:(适用于mac)
 
 ```bash
 npx husky add .husky/commit-msg 'npx commitlint --edit $1'
 ```
+
+## ps:
+
+如果是命令无效需要自己并初始化并创建文件
+
+在package.json/scripts里添加 "prepare": "husky install"并执行
+
+```bash
+npm run prepare
+```
+
+在.husky文件夹下创建commit-msg,写入指令 npx commitlint --edit $1
 
 更多信息可参考 [commitlint 文档](https://commitlint.js.org/#/guides-local-setup?id=install-husky)。
 ```
