@@ -6,7 +6,7 @@
     "preinstall": "npx only-allow pnpm",
     "init": "pnpm install --no-frozen-lockfile",
     "prepare": "husky install",
-    "clean": "lerna clean && rm -rf node_modules",
+    "clean": "lerna clean && rimraf node_modules",
     "test": "lerna run test",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
