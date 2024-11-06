@@ -1,6 +1,6 @@
 {
   "name": "markdownlint-config-re",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "index.json",
   "description": "文档规范",
   "keywords": [
