@@ -1,0 +1,23 @@
+{
+  "name": "markdownlint-config-re",
+  "version": "1.0.0",
+  "main": "index.json",
+  "description": "文档规范",
+  "keywords": [
+    "markdown",
+    "lint"
+  ],
+  "author": "baihong",
+  "homepage": "https://github.com/Graham-Sun/re-spec#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Graham-Sun/re-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Graham-Sun/re-spec/issues"
+  },
+  "peerDependencies": {
+    "markdownlint": "^0.28.1"
+  }
+}
