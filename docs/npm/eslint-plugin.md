@@ -1,5 +1,5 @@
 ---
-title: eslint-plugin-encode
+title: eslint-plugin-re
 categories:
   - 工程规范
 tags:
@@ -9,12 +9,12 @@ author:
   link: https://github.com/Graham-Sun/re-spec
 ---
 
-# eslint-plugin-encode
+# eslint-plugin-re
 
 除了本包，你需要同时安装 [ESlint](https://eslint.org/)
 
 ```shell
-$ npm install eslint-plugin-encode eslint --save-dev
+$ npm install eslint-plugin-re eslint --save-dev
 ```
 
 ## 使用
@@ -24,9 +24,9 @@ $ npm install eslint-plugin-encode eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['eslint-config-encode'],
+  plugin: ['eslint-config-re'],
   rules: {
-    'eslint-plugin-encode/no-secret-info': 'error',
+    'eslint-plugin-re/no-secret-info': 'error',
   },
 };
 ```
@@ -36,7 +36,7 @@ module.exports = {
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: 'plugin:eslint-plugin-encode/recommended',
+  extends: 'plugin:eslint-plugin-re/recommended',
 };
 ```
 

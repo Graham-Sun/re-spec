@@ -1,5 +1,5 @@
 ---
-title: markdownlint-config-encode
+title: markdownlint-config-re
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/Graham-Sun/re-spec
 ---
 
-# markdownlint-config-encode
+# markdownlint-config-re
 
 :::tip
 re-spec 文档 规范
@@ -26,7 +26,7 @@ npm install -g markdownlint-cli
 再安装 [markdownlint](https://www.npmjs.com/package/markdownlint)：
 
 ```bash
-npm install markdownlint-config-encode markdownlint --save-dev
+npm install markdownlint-config-re markdownlint --save-dev
 ```
 
 ## 使用
@@ -35,6 +35,6 @@ npm install markdownlint-config-encode markdownlint --save-dev
 
 ```json
 {
-  "extends": "markdownlint-config-encode"
+  "extends": "markdownlint-config-re"
 }
 ```

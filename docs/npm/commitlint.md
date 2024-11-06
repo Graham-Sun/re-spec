@@ -1,5 +1,5 @@
 ---
-title: commitlint-config-encode
+title: commitlint-config-re
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/Graham-Sun/re-spec
 ---
 
-# commitlint-config-encode
+# commitlint-config-re
 
 :::tip
 re-spec Git 规范
@@ -22,7 +22,7 @@ re-spec Git 规范
 使用时，需要安装 [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)：
 
 ```bash
-npm install commitlint-config-encode @commitlint/cli --save-dev
+npm install commitlint-config-re @commitlint/cli --save-dev
 ```
 
 ## 使用
@@ -31,7 +31,7 @@ npm install commitlint-config-encode @commitlint/cli --save-dev
 
 ```javascript
 module.exports = {
-  extends: ['encode'],
+  extends: ['re'],
 };
 ```
 

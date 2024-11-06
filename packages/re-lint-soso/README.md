@@ -1,17 +1,6 @@
----
-title: re-lint-soso
-categories:
-  - 脚手架规范
-tags:
-  - 脚手架规范
-author:
-  name: 白虹
-  link: https://github.com/Graham-Sun/re-spec
----
-
 # re-lint-soso
 
-`re-lint-soso` 是[re-spec 前端编码规范工程化](https://graham-sun.github.io/re-spec/)的配套 Lint 工具，可以为项目一键接入规范、一键扫描和修复规范问题，保障项目的编码规范和代码质量。
+`re-lint-soso` 是[前端编码规范工程化](https://graham-sun.github.io/re-spec/)的配套 Lint 工具，可以为项目一键接入规范、一键扫描和修复规范问题，保障项目的编码规范和代码质量。
 
 ## 背景
 
@@ -20,8 +9,8 @@ author:
 | 规范                                                              | Lint 工具                                                  | npm 包                                                                                 |
 | ----------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                              | [eslint-config-re](https://www.npmjs.com/package/eslint-config-re)             |
-| CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                         | [stylelint-config-re](https://www.npmjs.com/package/stylelint-config-re)       |
-| Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                 | [commitlint-config-re](hhttps://www.npmjs.com/package/markdownlint-config-re)     |
+| CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                         | [stylelint-config-re](https://www.npmjs.com/package/stylelint-config-re) |
+| Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                 | [commitlint-config-re](https://www.npmjs.com/package/commitlint-config-re)     |
 | 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint) | [markdownlint-config-re](https://www.npmjs.com/package/markdownlint-config-re) |
 
 可以看到这些 `Linter` 和规则包众多且零散，全部安装它们会给项目增加十几个依赖，接入和升级成本都比较高。
@@ -48,7 +37,7 @@ npm install re-lint-soso -g
 
 具体会做以下事情：
 
-- 安装各种依赖：包括 `Linter` 依赖，如 [ESLint](https://eslint.org/)、[stylelint](https://stylelint.io/)、[commitlint](https://commitlint.js.org/#/)、[markdownlint](https://github.com/DavidAnson/markdownlint) 等；配置依赖，如 [eslint-config-re](https://www.npmjs.com/package/eslint-config-re)、[stylelint-config-re](https://www.npmjs.com/package/stylelint-config-re)、[commitlint-config-re](hhttps://www.npmjs.com/package/markdownlint-config-re)、[markdownlint-config-re](https://www.npmjs.com/package/markdownlint-config-re) 等
+- 安装各种依赖：包括 `Linter` 依赖，如 [ESLint](https://eslint.org/)、[stylelint](https://stylelint.io/)、[commitlint](https://commitlint.js.org/#/)、[markdownlint](https://github.com/DavidAnson/markdownlint) 等；配置依赖，如 [eslint-config-re](https://www.npmjs.com/package/eslint-config-re)、[stylelint-config-re](https://www.npmjs.com/package/stylelint-config-re)、[commitlint-config-re](https://www.npmjs.com/package/commitlint-config-re)、[markdownlint-config-re](https://www.npmjs.com/package/markdownlint-config-re) 等
 - 写入各种配置文件，包括：
   - `.eslintrc.js`、`.eslintignore`：ESLint 配置（继承 `eslint-config-re`）及黑名单文件
   - `.stylelintrc.js`、`.stylelintignore`：stylelint 配置（继承 `stylelint-config-re`）及黑名单文件
@@ -121,7 +110,7 @@ npm install re-lint-soso --save
 
 ```js
 (await re) -
-  fe -
+  re -
   lint.init({
     eslintType: 'react',
     enableESLint: true,

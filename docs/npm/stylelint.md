@@ -1,5 +1,5 @@
 ---
-title: stylelint-config-encode
+title: stylelint-config-re
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/Graham-Sun/re-spec
 ---
 
-# stylelint-config-encode
+# stylelint-config-re
 
 :::tip
 re-spec CSS 规范
@@ -22,7 +22,7 @@ re-spec CSS 规范
 需要先行安装 [stylelint](https://www.npmjs.com/package/stylelint) 和 [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)：
 
 ```bash
-npm install stylelint-config-encode stylelint stylelint-scss --save-dev
+npm install stylelint-config-re stylelint stylelint-scss --save-dev
 ```
 
 ## 使用
@@ -31,6 +31,6 @@ npm install stylelint-config-encode stylelint stylelint-scss --save-dev
 
 ```json
 {
-  "extends": "stylelint-config-encode"
+  "extends": "stylelint-config-re"
 }
 ```
