@@ -6,8 +6,8 @@
   "main": "./lib/index.js",
   "scripts": {
     "dev": "npm run copyfiles && tsc -w",
-    "build": "rm -rf lib && npm run copyfiles && tsc",
-    "copyfiles": "copyfiles -a -u 1 \"src/config/**\" lib",
+    "build": "rimraf lib && npm run copyfiles && tsc",
+    "copyfiles": "robocopy src/config lib /E",
     "test": "npm run build && jest",
     "coverage": "nyc jest --silent --forceExit",
     "prepublishOnly": "npm run test"
@@ -94,5 +94,5 @@
   "bugs": {
     "url": "https://github.com/Graham-Sun/re-spec/issues"
   },
-  "gitHead": "a30c0efbb1b4978ce73e5a7aaf0aa5c1c184347d"
+  "gitHead": "e78b573e2a44dd83adc1e36493ae89bcfda9a707"
 }
