@@ -6,9 +6,6 @@
   "homepage": "https://github.com/Graham-Sun/re-spec#readme",
   "license": "ISC",
   "main": "index.js",
-  "publishConfig": {
-    "registry": "https://registry.npmmirror.com"
-  },
   "peerDependencies": {
     "stylelint": ">=8.3.0",
     "stylelint-scss": ">=2.0.0"
