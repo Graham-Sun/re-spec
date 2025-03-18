@@ -1,7 +1,7 @@
 {
   "name": "@sophiaa/re-spec",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.9",
   "description": "前端编码规范工程化",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
