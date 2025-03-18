@@ -3,6 +3,9 @@
 > JavaScript TypeScript Node 规范
 
 提供了多套配置文件以支持 `JavaScript`、`TypeScript`、`React`、`Vue`、`Node.js` 等多种项目类型。
+ps: 从 ESLint v8.53.0 开始，brace-style 规则已被标记为废弃，并迁移到了 @stylistic/eslint-plugin-js 插件中。如果你的项目中仍然使用了 @typescript-eslint/brace-style，可能会导致无法找到该规则的错误。
+
+所以如果提示报错，需要安装对应版本的依赖。
 
 ## JavaScript 项目 - eslint-config-re
 
