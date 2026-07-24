@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-re",
-  "version": "2.0.0",
+  "version": "1.0.11",
   "description": "Shareable stylelint config enforcing CSS/SCSS standards with strict style and SCSS-aware rules",
   "author": "baihong",
   "homepage": "https://github.com/Graham-Sun/re-spec/tree/main/packages/stylelint-config#readme",

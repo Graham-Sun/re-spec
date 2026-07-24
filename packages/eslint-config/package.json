@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-re",
-  "version": "1.1.0",
+  "version": "1.0.11",
   "main": "index.js",
   "description": "Shareable ESLint preset family with strict entry, essential (lax) overlay, and TypeScript/React/Vue/Node flavors",
   "keywords": [

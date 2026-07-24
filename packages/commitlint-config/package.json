@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-re",
-  "version": "1.1.0",
+  "version": "1.0.11",
   "description": "Shareable commitlint config enforcing Conventional Commits with 100-char header/body/footer limits",
   "author": "baihong",
   "homepage": "https://github.com/Graham-Sun/re-spec/tree/main/packages/commitlint-config#readme",
