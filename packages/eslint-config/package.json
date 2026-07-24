@@ -1,28 +1,56 @@
 {
   "name": "eslint-config-re",
-  "version": "1.0.10",
+  "version": "1.1.0",
   "main": "index.js",
-  "description": "JavaScript TypeScript Node 规范",
+  "description": "Shareable ESLint preset family with strict entry, essential (lax) overlay, and TypeScript/React/Vue/Node flavors",
   "keywords": [
-    "javaScript",
+    "eslint",
+    "eslint-config",
     "typescript",
+    "react",
+    "vue",
     "node",
+    "shareable-config",
     "lint"
   ],
   "scripts": {
     "lint": "eslint ./",
-    "test": "mocha ./__tests__/*.test.js --timeout 5000",
+    "test": "node ./__tests__/smoke.js && mocha ./__tests__/*.test.js --timeout 5000 && node ./__tests__/smoke-cli.js",
     "print-config": "eslint --print-config ./index.js > ./print-config.json"
   },
   "author": "baihong",
-  "homepage": "https://github.com/Graham-Sun/re-spec#readme",
-  "license": "ISC",
+  "homepage": "https://github.com/Graham-Sun/re-spec/tree/main/packages/eslint-config#readme",
+  "license": "MIT",
+  "type": "commonjs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Graham-Sun/re-spec.git"
+    "url": "git+https://github.com/Graham-Sun/re-spec.git",
+    "directory": "packages/eslint-config"
   },
   "bugs": {
     "url": "https://github.com/Graham-Sun/re-spec/issues"
+  },
+  "files": [
+    "index.js",
+    "es5.js",
+    "node.js",
+    "react.js",
+    "vue.js",
+    "jsx-a11y.js",
+    "README.md",
+    "LICENSE",
+    "essential/**/*.js",
+    "rules/**/*.js",
+    "typescript/**/*.js"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

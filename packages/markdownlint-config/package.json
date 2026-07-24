@@ -1,23 +1,44 @@
 {
   "name": "markdownlint-config-re",
-  "version": "1.0.10",
+  "version": "1.1.0",
   "main": "index.json",
-  "description": "文档规范",
+  "description": "Shareable markdownlint config with documented proper-noun whitelist and disabled line-length/duplicate-header/inline-HTML for flexible Chinese docs",
   "keywords": [
+    "markdownlint",
     "markdown",
-    "lint"
+    "lint",
+    "shareable-config",
+    "documentation"
   ],
   "author": "baihong",
-  "homepage": "https://github.com/Graham-Sun/re-spec#readme",
-  "license": "ISC",
+  "homepage": "https://github.com/Graham-Sun/re-spec/tree/main/packages/markdownlint-config#readme",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Graham-Sun/re-spec.git"
+    "url": "git+https://github.com/Graham-Sun/re-spec.git",
+    "directory": "packages/markdownlint-config"
   },
   "bugs": {
     "url": "https://github.com/Graham-Sun/re-spec/issues"
   },
+  "scripts": {
+    "test": "node ./test/smoke.js && node ./test/smoke-engine.js"
+  },
+  "files": [
+    "index.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
+    "markdownlint": "^0.28.1"
+  },
+  "devDependencies": {
     "markdownlint": "^0.28.1"
   },
   "gitHead": "8b5c4f7f84213b6c4f14d40cb77b8135ae73e0f6"

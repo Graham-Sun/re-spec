@@ -2,10 +2,14 @@
 
 > JavaScript TypeScript Node 规范
 
+Curated ESLint preset family with strict and essential (lax style) variants. Base preset (`index.js`) extends 6 ESLint built-in rule buckets (`best-practices` / `possible-errors` / `style` / `variables` / `es6` / `strict`) plus `eslint-plugin-import`. Per-flavor entry files (`es5` / `node` / `react` / `vue` / `jsx-a11y`) compose framework rules on top. TypeScript entries live under `typescript/` and use `@typescript-eslint/parser` + `plugin`. The essential layer (`essential/<flavor>`) downgrades style rules to `warn` via `essential/rules/set-style-to-warn.js` and applies per-language blacklists.
+
 提供了多套配置文件以支持 `JavaScript`、`TypeScript`、`React`、`Vue`、`Node.js` 等多种项目类型。
 ps: 从 ESLint v8.53.0 开始，brace-style 规则已被标记为废弃，并迁移到了 @stylistic/eslint-plugin-js 插件中。如果你的项目中仍然使用了 @typescript-eslint/brace-style，可能会导致无法找到该规则的错误。
 
 所以如果提示报错，需要安装对应版本的依赖。
+
+> Requires `eslint@^8.0.0` as a peer dependency. Per-flavor plugins (`eslint-plugin-react`, `eslint-plugin-vue`, `@typescript-eslint/*`, etc.) are **not** listed as peerDependencies — they are documented per-flavor in the sections below. Consumers extend `extends: ["eslint-config-re/<flavor>"]` for the flavor they need.
 
 ## JavaScript 项目 - eslint-config-re
 
@@ -287,3 +291,15 @@ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
   - `globals`: 指定代码中可能用到的全局变量，以免全局变量被 [no-undef](http://eslint.org/docs/rules/no-undef) 规则报错。
   - `env`: 指定代码的运行环境，每个环境预定义了一组对应的全局变量，本包已开启的环境有 browser、node、jquery、es6 及几个测试框架的环境。
 - 了解常用的 ESLint 命令，如 `--fix`、`--ext`，可参考官网的 [Command Line Interface](http://eslint.org/docs/user-guide/command-line-interface)。
+
+## Tests
+
+Run `npm test` inside this package to execute three layers:
+
+1. Node shape check (`__tests__/smoke.js`) — asserts every per-flavor entry file loads and exports a valid ESLint config object.
+2. Mocha suite (`__tests__/*.test.js`) — validates each flavor's config against TS/JS/React/Vue/Node fixtures using `babel-eslint-parser` and `@typescript-eslint/parser`.
+3. ESLint CLI engine check (`__tests__/smoke-cli.js`) — spawns the `eslint` binary against `__tests__/fixtures/good.js` (expects exit 0) and `__tests__/fixtures/bad.js` (expects exit 1) using a temp config that extends `../index.js`.
+
+## License
+
+MIT © 2024 sophiaa

@@ -1,21 +1,47 @@
 {
   "name": "commitlint-config-re",
-  "version": "1.0.10",
-  "description": "Git规范",
+  "version": "1.1.0",
+  "description": "Shareable commitlint config enforcing Conventional Commits with 100-char header/body/footer limits",
   "author": "baihong",
-  "homepage": "https://github.com/Graham-Sun/re-spec#readme",
-  "license": "ISC",
+  "homepage": "https://github.com/Graham-Sun/re-spec/tree/main/packages/commitlint-config#readme",
+  "license": "MIT",
   "main": "index.js",
+  "type": "commonjs",
   "keywords": [
-    "commit",
+    "commitlint",
+    "conventional-commits",
+    "commit-message",
+    "git",
+    "shareable-config",
     "lint"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Graham-Sun/re-spec.git"
+    "url": "git+https://github.com/Graham-Sun/re-spec.git",
+    "directory": "packages/commitlint-config"
   },
   "bugs": {
     "url": "https://github.com/Graham-Sun/re-spec/issues"
+  },
+  "scripts": {
+    "test": "node ./test/smoke.js && node ./test/smoke-cli.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@commitlint/cli": "^17.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.1"
   },
   "dependencies": {
     "conventional-changelog-conventionalcommits": "^4.5.0"

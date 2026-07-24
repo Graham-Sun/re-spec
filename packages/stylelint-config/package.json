@@ -1,29 +1,50 @@
 {
   "name": "stylelint-config-re",
-  "version": "1.0.10",
-  "description": "CSS规范",
+  "version": "2.0.0",
+  "description": "Shareable stylelint config enforcing CSS/SCSS standards with strict style and SCSS-aware rules",
   "author": "baihong",
-  "homepage": "https://github.com/Graham-Sun/re-spec#readme",
-  "license": "ISC",
+  "homepage": "https://github.com/Graham-Sun/re-spec/tree/main/packages/stylelint-config#readme",
+  "license": "MIT",
   "main": "index.js",
+  "type": "commonjs",
+  "keywords": [
+    "stylelint",
+    "css",
+    "scss",
+    "stylesheet",
+    "lint",
+    "shareable-config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Graham-Sun/re-spec.git",
+    "directory": "packages/stylelint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/Graham-Sun/re-spec/issues"
+  },
+  "scripts": {
+    "test": "node ./__tests__/smoke.js && jest && node ./__tests__/smoke-cli.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
-    "stylelint": ">=8.3.0",
-    "stylelint-scss": ">=2.0.0"
+    "stylelint": "^14.0.0",
+    "stylelint-scss": "^4.0.0"
   },
   "devDependencies": {
     "jest": "^29.5.0",
     "stylelint": "^14.3.0",
     "stylelint-scss": "^4.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Graham-Sun/re-spec.git"
-  },
-  "scripts": {
-    "test": "jest"
-  },
-  "bugs": {
-    "url": "https://github.com/Graham-Sun/re-spec/issues"
   },
   "gitHead": "8b5c4f7f84213b6c4f14d40cb77b8135ae73e0f6"
 }

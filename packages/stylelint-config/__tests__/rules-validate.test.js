@@ -82,4 +82,24 @@ describe('test/rules-validate.test.js', () => {
       assert.ok(filesResult.length === 0);
     }
   });
+
+  it('Validate essential', async () => {
+    const filePaths = [path.join(__dirname, './fixtures/essential.css')];
+
+    const result = await stylelint.lint({
+      configFile: path.join(__dirname, '../index.js'),
+      files: filePaths,
+      fix: false,
+    });
+
+    if (result && result.errored) {
+      const filesResult = JSON.parse(result.output || '[]') || [];
+      filesResult.forEach((fileResult) => {
+        console.log(`========= ${filePaths} ==========`);
+        console.log(fileResult.warnings);
+      });
+
+      assert.ok(filesResult.length !== 0);
+    }
+  });
 });
