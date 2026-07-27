@@ -9,7 +9,7 @@ Enforces Conventional Commits header/body/footer conventions: 100-character limi
 使用时，需要安装 [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)：
 
 ```bash
-npm install commitlint-config-re @commitlint/cli --save-dev
+npm install @sophiaa/commitlint-config-re @commitlint/cli --save-dev
 ```
 
 > Requires `@commitlint/cli@^17.0.0` as a peer dependency.
@@ -45,4 +45,4 @@ npx commitlint --edit $1
 
 ## License
 
-ISC © baihong
+MIT © 2024 sophiaa

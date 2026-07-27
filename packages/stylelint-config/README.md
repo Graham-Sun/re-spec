@@ -7,7 +7,7 @@ Enforces CSS/SCSS standards via a curated stylelint config: default severity `wa
 需要先行安装 [stylelint](https://www.npmjs.com/package/stylelint) 和 [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)：
 
 ```bash
-npm install stylelint-config-re stylelint stylelint-scss --save-dev
+npm install @sophiaa/stylelint-config-re stylelint stylelint-scss --save-dev
 ```
 
 > Requires `stylelint@^14.0.0` and `stylelint-scss@^4.0.0` as peer dependencies.
@@ -18,7 +18,7 @@ npm install stylelint-config-re stylelint stylelint-scss --save-dev
 
 ```json
 {
-  "extends": "stylelint-config-re"
+  "extends": "@sophiaa/stylelint-config-re"
 }
 ```
 

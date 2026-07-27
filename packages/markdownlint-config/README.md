@@ -7,7 +7,7 @@ Enforces Markdown conventions via a curated markdownlint config: defaults on, wi
 需要先行安装 [markdownlint](https://www.npmjs.com/package/markdownlint)：
 
 ```bash
-npm install markdownlint-config-re markdownlint --save-dev
+npm install @sophiaa/markdownlint-config-re markdownlint --save-dev
 ```
 
 > Requires `markdownlint@^0.28.1` as a peer dependency.
@@ -18,7 +18,7 @@ npm install markdownlint-config-re markdownlint --save-dev
 
 ```json
 {
-  "extends": "markdownlint-config-re"
+  "extends": "@sophiaa/markdownlint-config-re"
 }
 ```
 

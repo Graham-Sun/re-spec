@@ -171,7 +171,7 @@ author:
   ## [2.0.0](https://version-diff-url) (2020-09-05)
   ```
 
-- 2.6.【推荐】更新类型 `type` 与 Git message header 中的 [`type`](./1.git.md#1.3.1-type) 相关联，可以不一一对应
+- 2.6.【推荐】更新类型 `type` 与 Git message header 中的 [`type`](./git.md#1-3-1-type) 相关联，可以不一一对应
 
   `type` 用以说明更新的类型，推荐值如下：
 
