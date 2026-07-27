@@ -70,7 +70,7 @@ npm i -D eslint-plugin-jsx-a11y
 
 ```json
 {
-  "extends": ["@sophiaa/eslint-config-re/$1", "eslint-config-re/jsx-a11y"]
+  "extends": ["@sophiaa/eslint-config-re/react", "@sophiaa/eslint-config-re/jsx-a11y"]
 }
 ```
 
@@ -154,7 +154,7 @@ npm i -D @sophiaa/eslint-config-re @typescript-eslint/parser @typescript-eslint/
 
 ```json
 {
-  "extends": "@sophiaa/eslint-config-re/$1",
+  "extends": "@sophiaa/eslint-config-re/typescript",
   "parserOptions": {
     "project": "./tsconfig.eslint.json"
   }
@@ -197,7 +197,7 @@ npm i -D  eslint-plugin-jsx-a11y
 
 ```json
 {
-  "extends": ["@sophiaa/eslint-config-re/$1", "eslint-config-re/jsx-a11y"]
+  "extends": ["@sophiaa/eslint-config-re/typescript/react", "@sophiaa/eslint-config-re/jsx-a11y"]
 }
 ```
 
@@ -270,7 +270,7 @@ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
 
 ```json
 {
-  "extends": ["@sophiaa/eslint-config-re/$1", "prettier"]
+  "extends": ["@sophiaa/eslint-config-re/typescript/react", "prettier"]
 }
 ```
 

@@ -160,7 +160,7 @@ npm i -D @sophiaa/eslint-config-re @typescript-eslint/parser @typescript-eslint/
 
 ```json
 {
-  "extends": "@sophiaa/eslint-config-re/$1",
+  "extends": "@sophiaa/eslint-config-re/typescript",
   "parserOptions": {
     "project": "./tsconfig.eslint.json"
   }
@@ -276,7 +276,7 @@ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
 
 ```json
 {
-  "extends": ["@sophiaa/eslint-config-re/$1", "prettier"]
+  "extends": ["@sophiaa/eslint-config-re/typescript/react", "prettier"]
 }
 ```
 
